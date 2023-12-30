@@ -1,0 +1,898 @@
+[
+{
+	"name": "Chelsea Pub",
+	"lng": "14.288023",
+	"lat": "48.304780",
+	"date": "2022-01-25",
+	"key": "5",
+	"type": "1"
+}
+, {
+	"name": "stadtliebe",
+	"lng": "14.290209",
+	"lat": "48.302237",
+	"date": "2022-02-01",
+	"key": "6",
+	"type": "1"
+}
+, {
+	"name": "Gösserkeller",
+	"lng": "14.287853",
+	"lat": "48.305611",
+	"date": "2022-02-08",
+	"key": "7",
+	"type": "1"
+}
+, {
+	"name": "Cafe Strom",
+	"lng": "14.284583",
+	"lat": "48.310119",
+	"date": "2022-02-15",
+	"key": "8",
+	"type": "1"
+}
+, {
+	"name": "Gemeinde Hinterstoder",
+	"lng": "14.156330",
+	"lat": "47.699980",
+	"date": "2022-02-16",
+	"key": "9",
+	"type": "3"
+}
+, {
+	"name": "Jack the Ripperl",
+	"lng": "14.288770",
+	"lat": "48.303822",
+	"date": "2022-02-22",
+	"key": "10",
+	"type": "1"
+}
+, {
+	"name": "DAO",
+	"lng": "14.283000",
+	"lat": "48.302738",
+	"date": "2022-03-01",
+	"key": "11",
+	"type": "1"
+}
+, {
+	"name": "Leberkas-Pepi Linz Hauptbahnhof",
+	"lng": "14.291190",
+	"lat": "48.290533",
+	"date": "2022-03-08",
+	"key": "12",
+	"type": "1"
+}
+, {
+	"name": "Alte Welt",
+	"lng": "14.286654",
+	"lat": "48.306482",
+	"date": "2022-03-15",
+	"key": "13",
+	"type": "1"
+}
+, {
+	"name": "Glorious Bastards Linz",
+	"lng": "14.285155",
+	"lat": "48.302864",
+	"date": "2022-03-22",
+	"key": "14",
+	"type": "1"
+}
+, {
+	"name": "Barok Belgie",
+	"lng": "14.284799",
+	"lat": "48.305859",
+	"date": "2022-03-29",
+	"key": "15",
+	"type": "1"
+}
+, {
+	"name": "Die Donauwirtinnen",
+	"lng": "14.279226",
+	"lat": "48.308352",
+	"date": "2022-04-05",
+	"key": "16",
+	"type": "1"
+}
+, {
+	"name": "Die Wirtsleut im Leopoldistüberl",
+	"lng": "14.287179",
+	"lat": "48.306619",
+	"date": "2022-04-12",
+	"key": "17",
+	"type": "1"
+}
+, {
+	"name": "Zur Liesl",
+	"lng": "14.298564",
+	"lat": "48.311904",
+	"date": "2022-04-19",
+	"key": "18",
+	"type": "1"
+}
+, {
+	"name": "The Old Dubliner",
+	"lng": "14.285816",
+	"lat": "48.305557",
+	"date": "2022-04-26",
+	"key": "19",
+	"type": "1"
+}
+, {
+	"name": "Urfahrmarkt",
+	"lng": "14.288896",
+	"lat": "48.312662",
+	"date": "2022-05-03",
+	"key": "20",
+	"type": "1"
+}
+, {
+	"name": "Biergartl an der Donau in Linz Urfahr",
+	"lng": "14.281751",
+	"lat": "48.308582",
+	"date": "2022-05-10",
+	"key": "21",
+	"type": "1"
+}
+, {
+	"name": "Gallanderstüberl",
+	"lng": "14.305951",
+	"lat": "48.317276",
+	"date": "2022-05-17",
+	"key": "22",
+	"type": "1"
+}
+, {
+	"name": "Schlossbrauerei Weinberg Erste oö. Gasthausbrauerei",
+	"lng": "14.539495",
+	"lat": "48.448537",
+	"date": "2022-05-24",
+	"key": "23",
+	"type": "1"
+}
+, {
+	"name": "Salonschiff Fräulein Florentine",
+	"lng": "14.288256",
+	"lat": "48.311423",
+	"date": "2022-05-31",
+	"key": "24",
+	"type": "1"
+}
+, {
+	"name": "Michaeli Bräu",
+	"lng": "14.247520",
+	"lat": "48.296301",
+	"date": "2022-06-06",
+	"key": "25",
+	"type": "3"
+}
+, {
+	"name": "PAULS steak & veggi Linz",
+	"lng": "14.287225",
+	"lat": "48.300272",
+	"date": "2022-06-07",
+	"key": "26",
+	"type": "1"
+}
+, {
+	"name": "Gasthaus Zum Schiefen Apfelbaum",
+	"lng": "14.293566",
+	"lat": "48.281294",
+	"date": "2022-06-14",
+	"key": "27",
+	"type": "1"
+}
+, {
+	"name": "Sputnik Rockcafe",
+	"lng": "14.289862",
+	"lat": "48.308034",
+	"date": "2022-06-21",
+	"key": "28",
+	"type": "1"
+}
+, {
+	"name": "Wochenmarkt",
+	"lng": "14.176252",
+	"lat": "48.331522",
+	"date": "2022-06-24",
+	"key": "29",
+	"type": "3"
+}
+, {
+	"name": "Rox Musicbar & Grill Linz | Burger & American Kitchen",
+	"lng": "14.289844",
+	"lat": "48.305200",
+	"date": "2022-06-28",
+	"key": "30",
+	"type": "1"
+}
+, {
+	"name": "HEMINGWAY'S COCKTAIL&MUSIC BAR",
+	"lng": "14.288337",
+	"lat": "48.305454",
+	"date": "2022-07-05",
+	"key": "31",
+	"type": "1"
+}
+, {
+	"name": "SanTelmo",
+	"lng": "14.514741",
+	"lat": "48.370271",
+	"date": "2022-07-12",
+	"key": "32",
+	"type": "1"
+}
+, {
+	"name": "SANDBURG",
+	"lng": "14.291962",
+	"lat": "48.310235",
+	"date": "2022-07-19",
+	"key": "33",
+	"type": "1"
+}
+, {
+	"name": "Ristorante Pizzeria La Ruffa Donaulände (ehemals Amici)",
+	"lng": "14.287164",
+	"lat": "48.312401",
+	"date": "2022-07-26",
+	"key": "34",
+	"type": "1"
+}
+, {
+	"name": "Cafe Bar Aquarium",
+	"lng": "14.284264",
+	"lat": "48.304663",
+	"date": "2022-08-02",
+	"key": "36",
+	"type": "1"
+}
+, {
+	"name": "Linzer Heuriger",
+	"lng": "14.291149",
+	"lat": "48.306691",
+	"date": "2022-08-09",
+	"key": "37",
+	"type": "1"
+}
+, {
+	"name": "Frühjahrsmarkt Linz Urfahr",
+	"lng": "14.289043",
+	"lat": "48.313168",
+	"date": "2022-08-16",
+	"key": "38",
+	"type": "1"
+}
+, {
+	"name": "Sam's Steakhouse",
+	"lng": "14.286157",
+	"lat": "48.305534",
+	"date": "2022-08-23",
+	"key": "39",
+	"type": "1"
+}
+, {
+	"name": "Wirtshaus Keintzel",
+	"lng": "14.287655",
+	"lat": "48.306380",
+	"date": "2022-08-30",
+	"key": "40",
+	"type": "1"
+}
+, {
+	"name": "Gościnna Chata",
+	"lng": "14.301701",
+	"lat": "48.314874",
+	"date": "2022-09-06",
+	"key": "41",
+	"type": "1"
+}
+, {
+	"name": "Coconut",
+	"lng": "14.290401",
+	"lat": "48.304150",
+	"date": "2022-09-13",
+	"key": "42",
+	"type": "1"
+}
+, {
+	"name": "Bugs",
+	"lng": "14.286754",
+	"lat": "48.306374",
+	"date": "2022-09-20",
+	"key": "43",
+	"type": "1"
+}
+, {
+	"name": "Julia's Wohnzimmer",
+	"lng": "14.290425",
+	"lat": "48.319876",
+	"date": "2022-09-27",
+	"key": "44",
+	"type": "1"
+}
+, {
+	"name": "Miyako Ramen",
+	"lng": "14.284674",
+	"lat": "48.304677",
+	"date": "2022-10-04",
+	"key": "45",
+	"type": "1"
+}
+, {
+	"name": "Hooters",
+	"lng": "-86.764854",
+	"lat": "21.110326",
+	"date": "2022-10-04",
+	"key": "50",
+	"type": "2"
+}
+, {
+	"name": "Pandana Thai Restaurant",
+	"lng": "14.286870",
+	"lat": "48.304692",
+	"date": "2022-10-11",
+	"key": "46",
+	"type": "1"
+}
+, {
+	"name": "The Monkey Beach",
+	"lng": "-86.968467",
+	"lat": "20.487866",
+	"date": "2022-10-11",
+	"key": "49",
+	"type": "2"
+}
+, {
+	"name": "New Namastey India",
+	"lng": "14.290089",
+	"lat": "48.296169",
+	"date": "2022-10-18",
+	"key": "47",
+	"type": "1"
+}
+, {
+	"name": "Das neue Muldenstüberl",
+	"lng": "14.299230",
+	"lat": "48.274877",
+	"date": "2022-10-25",
+	"key": "53",
+	"type": "1"
+}
+, {
+	"name": "Stiegl-Klosterhof",
+	"lng": "14.289349",
+	"lat": "48.302190",
+	"date": "2022-11-01",
+	"key": "56",
+	"type": "1"
+}
+, {
+	"name": "tamu sana",
+	"lng": "14.284466",
+	"lat": "48.310065",
+	"date": "2022-11-08",
+	"key": "59",
+	"type": "1"
+}
+, {
+	"name": "Lisis Schmankerlstube",
+	"lng": "14.296674",
+	"lat": "48.297292",
+	"date": "2022-11-15",
+	"key": "61",
+	"type": "1"
+}
+, {
+	"name": "Bayern Stubn",
+	"lng": "14.303935",
+	"lat": "48.284670",
+	"date": "2022-11-22",
+	"key": "65",
+	"type": "1"
+}
+, {
+	"name": "Cafe Valdés",
+	"lng": "14.286206",
+	"lat": "48.302945",
+	"date": "2022-11-29",
+	"key": "87",
+	"type": "1"
+}
+, {
+	"name": "Christkindlmarkt Hauptplatz",
+	"lng": "14.286646",
+	"lat": "48.305633",
+	"date": "2022-12-06",
+	"key": "90",
+	"type": "1"
+}
+, {
+	"name": "amsec",
+	"lng": "14.513291",
+	"lat": "48.369844",
+	"date": "2022-12-13",
+	"key": "91",
+	"type": "1"
+}
+, {
+	"name": "Alte Metzgerei",
+	"lng": "14.285996",
+	"lat": "48.303146",
+	"date": "2022-12-20",
+	"key": "92",
+	"type": "1"
+}
+, {
+	"name": "Cafe Andi\"s Cool",
+	"lng": "14.293909",
+	"lat": "48.299045",
+	"date": "2022-12-27",
+	"key": "100",
+	"type": "1"
+}
+, {
+	"name": "Gasthaus \"Zur Eisernen Hand\"",
+	"lng": "14.299259",
+	"lat": "48.302878",
+	"date": "2023-01-03",
+	"key": "98",
+	"type": "1"
+}
+, {
+	"name": "Gasthaus \"Zur Eisernen Hand\"2",
+	"lng": "14.299259",
+	"lat": "48.302878",
+	"date": "2023-01-10",
+	"key": "103",
+	"type": "1"
+}
+, {
+	"name": "Alte Welt",
+	"lng": "14.286654",
+	"lat": "48.306482",
+	"date": "2023-01-17",
+	"key": "13",
+	"type": "1"
+}
+, {
+	"name": "Fischerhäusl",
+	"lng": "14.282267",
+	"lat": "48.309040",
+	"date": "2023-01-24",
+	"key": "101",
+	"type": "1"
+}
+, {
+	"name": "TAIFUN asiatisches Restaurant",
+	"lng": "14.259807",
+	"lat": "48.262852",
+	"date": "2023-01-31",
+	"key": "113",
+	"type": "1"
+}
+, {
+	"name": "Gelbes Krokodil",
+	"lng": "14.290849",
+	"lat": "48.302931",
+	"date": "2023-02-07",
+	"key": "114",
+	"type": "1"
+}
+, {
+	"name": "Thüsen Tak",
+	"lng": "14.285138",
+	"lat": "48.301086",
+	"date": "2023-02-14",
+	"key": "85",
+	"type": "1"
+}
+, {
+	"name": "Schnellimbiss am Schillerpark",
+	"lng": "14.291130",
+	"lat": "48.298316",
+	"date": "2023-02-21",
+	"key": "125",
+	"type": "1"
+}
+, {
+	"name": "Goethe Stub'n",
+	"lng": "14.298333",
+	"lat": "48.297936",
+	"date": "2023-02-28",
+	"key": "97",
+	"type": "1"
+}
+, {
+	"name": "Rosi's Pub",
+	"lng": "14.298363",
+	"lat": "48.289003",
+	"date": "2023-03-07",
+	"key": "127",
+	"type": "1"
+}
+, {
+	"name": "TiL Treffpunkt in Langholzfeld",
+	"lng": "14.239075",
+	"lat": "48.243753",
+	"date": "2023-03-14",
+	"key": "132",
+	"type": "1"
+}
+, {
+	"name": "Lüfti - Lüfteneggerstüberl",
+	"lng": "14.294309",
+	"lat": "48.309128",
+	"date": "2023-03-21",
+	"key": "84",
+	"type": "1"
+}
+, {
+	"name": "Wissensturm - Volkshochschule Linz - Stadtbibliothek Linz",
+	"lng": "14.288338",
+	"lat": "48.290846",
+	"date": "2023-03-28",
+	"key": "133",
+	"type": "1"
+}
+, {
+	"name": "Restaurant \"Alte Brücke Mostar\"",
+	"lng": "14.284930",
+	"lat": "48.253845",
+	"date": "2023-04-04",
+	"key": "104",
+	"type": "1"
+}
+, {
+	"name": "Hannis Beisl",
+	"lng": "14.322264",
+	"lat": "48.287280",
+	"date": "2023-04-11",
+	"key": "119",
+	"type": "1"
+}
+, {
+	"name": "Cafe Scorpion",
+	"lng": "14.312915",
+	"lat": "48.297730",
+	"date": "2023-04-18",
+	"key": "73",
+	"type": "1"
+}
+, {
+	"name": "Örebro Ölhall",
+	"lng": "15.212347",
+	"lat": "59.275426",
+	"date": "2023-04-18",
+	"key": "135",
+	"type": "2"
+}
+, {
+	"name": "Augustiner Bräu Kloster Mülln",
+	"lng": "13.033772",
+	"lat": "47.805688",
+	"date": "2023-04-25",
+	"key": "137",
+	"type": "1"
+}
+, {
+	"name": "Urfahrmarkt2",
+	"lng": "14.288896",
+	"lat": "48.312662",
+	"date": "2023-05-02",
+	"key": "139",
+	"type": "1"
+}
+, {
+	"name": "Osteria Il Pescatore",
+	"lng": "14.298120",
+	"lat": "48.306456",
+	"date": "2023-05-09",
+	"key": "143",
+	"type": "1"
+}
+, {
+	"name": "Schmankerl Eck",
+	"lng": "14.300592",
+	"lat": "48.299890",
+	"date": "2023-05-16",
+	"key": "146",
+	"type": "1"
+}
+, {
+	"name": "Alarabe Restaurant مطعم العربي",
+	"lng": "14.297231",
+	"lat": "48.302524",
+	"date": "2023-05-23",
+	"key": "147",
+	"type": "1"
+}
+, {
+	"name": "Michaeli Bräu 2",
+	"lng": "14.247520",
+	"lat": "48.296301",
+	"date": "2023-05-29",
+	"key": "191",
+	"type": "3"
+}
+, {
+	"name": "Veggiezz X Garden",
+	"lng": "14.301311",
+	"lat": "48.312856",
+	"date": "2023-05-30",
+	"key": "162",
+	"type": "1"
+}
+, {
+	"name": "Hofkneipe",
+	"lng": "14.300611",
+	"lat": "48.312142",
+	"date": "2023-06-06",
+	"key": "3",
+	"type": "1"
+}
+, {
+	"name": "Bäckerei Konditorei Inpek",
+	"lng": "14.299610",
+	"lat": "48.309785",
+	"date": "2023-06-13",
+	"key": "149",
+	"type": "1"
+}
+, {
+	"name": "Linzer Stadtalm",
+	"lng": "14.323863",
+	"lat": "48.306273",
+	"date": "2023-06-20",
+	"key": "168",
+	"type": "1"
+}
+, {
+	"name": "Stefan Stubm",
+	"lng": "14.310715",
+	"lat": "48.300863",
+	"date": "2023-06-27",
+	"key": "174",
+	"type": "1"
+}
+, {
+	"name": "Lucky Bamboo Asia-Restaurant in Perg",
+	"lng": "14.635852",
+	"lat": "48.250535",
+	"date": "2023-07-01",
+	"key": "159",
+	"type": "3"
+}
+, {
+	"name": "Taverne Sorbas",
+	"lng": "14.287930",
+	"lat": "48.306777",
+	"date": "2023-07-04",
+	"key": "186",
+	"type": "1"
+}
+, {
+	"name": "Brauhaus Haselbach",
+	"lng": "13.055600",
+	"lat": "48.253272",
+	"date": "2023-07-07",
+	"key": "192",
+	"type": "3"
+}
+, {
+	"name": "Kaffee Glockenspiel",
+	"lng": "14.286335",
+	"lat": "48.305365",
+	"date": "2023-07-11",
+	"key": "187",
+	"type": "1"
+}
+, {
+	"name": "Cafe Meier",
+	"lng": "14.289141",
+	"lat": "48.306819",
+	"date": "2023-07-18",
+	"key": "151",
+	"type": "1"
+}
+, {
+	"name": "ABIS Kebap",
+	"lng": "14.286121",
+	"lat": "48.306766",
+	"date": "2023-07-25",
+	"key": "201",
+	"type": "1"
+}
+, {
+	"name": "Rooftop7",
+	"lng": "14.286349",
+	"lat": "48.302741",
+	"date": "2023-08-01",
+	"key": "204",
+	"type": "1"
+}
+, {
+	"name": "Underground Cafe",
+	"lng": "14.283177",
+	"lat": "48.311114",
+	"date": "2023-08-08",
+	"key": "210",
+	"type": "1"
+}
+, {
+	"name": "Antica Locanda - Italienisches Restaurant & Pizzeria",
+	"lng": "14.280711",
+	"lat": "48.301876",
+	"date": "2023-08-15",
+	"key": "190",
+	"type": "1"
+}
+, {
+	"name": "Gabriellas Trattoria",
+	"lng": "14.379063",
+	"lat": "48.241432",
+	"date": "2023-08-22",
+	"key": "214",
+	"type": "1"
+}
+, {
+	"name": "Xu Wok & More",
+	"lng": "14.291395",
+	"lat": "48.302237",
+	"date": "2023-08-29",
+	"key": "217",
+	"type": "1"
+}
+, {
+	"name": "Exxtrablatt",
+	"lng": "14.287548",
+	"lat": "48.302621",
+	"date": "2023-09-05",
+	"key": "108",
+	"type": "1"
+}
+, {
+	"name": "Weinstadl Urfahr",
+	"lng": "14.299990",
+	"lat": "48.333490",
+	"date": "2023-09-12",
+	"key": "224",
+	"type": "1"
+}
+, {
+	"name": "Bigoli",
+	"lng": "14.291216",
+	"lat": "48.302664",
+	"date": "2023-09-19",
+	"key": "148",
+	"type": "1"
+}
+, {
+	"name": "Gelbes Krokodil",
+	"lng": "14.290849",
+	"lat": "48.302931",
+	"date": "2023-09-26",
+	"key": "114",
+	"type": "1"
+}
+, {
+	"name": "Tramway im Stockhof",
+	"lng": "14.286863",
+	"lat": "48.294925",
+	"date": "2023-10-03",
+	"key": "89",
+	"type": "1"
+}
+, {
+	"name": "Tractive",
+	"lng": "14.234120",
+	"lat": "48.240701",
+	"date": "2023-10-10",
+	"key": "228",
+	"type": "1"
+}
+, {
+	"name": "s'Fichterl \/ Runway",
+	"lng": "14.309883",
+	"lat": "48.279971",
+	"date": "2023-10-17",
+	"key": "215",
+	"type": "1"
+}
+, {
+	"name": "Lavinya Pizzeria & Kebap",
+	"lng": "14.517176",
+	"lat": "48.367182",
+	"date": "2023-10-24",
+	"key": "232",
+	"type": "1"
+}
+, {
+	"name": "Freistädter Brauhaus",
+	"lng": "14.501339",
+	"lat": "48.510145",
+	"date": "2023-10-25",
+	"key": "231",
+	"type": "3"
+}
+, {
+	"name": "Big Joe Falafel",
+	"lng": "14.289240",
+	"lat": "48.304938",
+	"date": "2023-10-31",
+	"key": "233",
+	"type": "1"
+}
+, {
+	"name": "Bar-Restaurant AmGraben",
+	"lng": "14.289407",
+	"lat": "48.305026",
+	"date": "2023-11-07",
+	"key": "234",
+	"type": "1"
+}
+, {
+	"name": "Rosi's Cafe - Bar",
+	"lng": "14.284288",
+	"lat": "48.302979",
+	"date": "2023-11-14",
+	"key": "239",
+	"type": "1"
+}
+, {
+	"name": "Station183",
+	"lng": "14.288889",
+	"lat": "48.300783",
+	"date": "2023-11-21",
+	"key": "140",
+	"type": "1"
+}
+, {
+	"name": "Station1832",
+	"lng": "14.288889",
+	"lat": "48.300783",
+	"date": "2023-11-28",
+	"key": "221",
+	"type": "1"
+}
+, {
+	"name": "Maria's Vinothek",
+	"lng": "14.286219",
+	"lat": "48.305494",
+	"date": "2023-12-05",
+	"key": "245",
+	"type": "1"
+}
+, {
+	"name": "Indisch Linz",
+	"lng": "14.287766",
+	"lat": "48.306703",
+	"date": "2023-12-12",
+	"key": "247",
+	"type": "1"
+}
+, {
+	"name": "Landestheater Linz - Musiktheater",
+	"lng": "14.293104",
+	"lat": "48.294665",
+	"date": "2023-12-19",
+	"key": "255",
+	"type": "3"
+}
+, {
+	"name": "Phoenix City",
+	"lng": "14.548835",
+	"lat": "48.243245",
+	"date": "2023-12-26",
+	"key": "256",
+	"type": "1"
+}
+, {
+	"name": "Schlägler Stüberl zum Otto",
+	"lng": "14.310284",
+	"lat": "48.294723",
+	"date": "2024-01-02",
+	"key": "257",
+	"type": "1"
+}
+]

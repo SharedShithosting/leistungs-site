@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Leistungstag</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="icon" type="image/x-icon" href="./images/thumbnail.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {font-family: "Lato", sans-serif}
+    .mySlides {display: none}
+  </style>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+
+
+  <script type="module" crossorigin src="./assets/index-36802418.js"></script>
+  <link rel="stylesheet" href="./assets/index-6a492eb8.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Daheim</a>
+    <a href="kalender.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Kalender</a>
+    <a href="karte.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Karte</a>
+    <a href="selbsthilfe.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Selbsthilfe</a>
+    <a href="statuten.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Statuten</a>
+    <a href="impressum.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Impressum</a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Daheim</a>
+  <a href="selbsthilfe.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Selbsthilfe</a>
+  <a href="kalender.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Kalender</a>
+  <a href="karte.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Karte</a>
+  <a href="statuten.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Statuten</a>
+  <a href="impressum.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Impressum</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Schriftzug -->
+  <div class="w3-display-container w3-center w3-black">
+    <img src="./images/LeistungstagSchrift.svg" style="width:60%">
+  </div>
+
+  <!-- Karte -->
+  <div id="map"></div>
+
+    <!-- prettier-ignore -->
+    <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly"});
+    </script>
+    
+  
+  <!-- End Page Content -->
+  </div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <a href="https://www.reddit.com/r/leistungstag/"><i class="fa fa-facebook-official w3-hover-opacity"></a></i>
+  <a href="https://www.reddit.com/r/leistungstag/"><i class="fa fa-instagram w3-hover-opacity"></a></i>
+  <a href="https://www.reddit.com/r/leistungstag/"><i class="fa fa-snapchat w3-hover-opacity"></a></i>
+  <a href="https://www.reddit.com/r/leistungstag/"><i class="fa fa-pinterest-p w3-hover-opacity"></a></i>
+  <a href="https://www.reddit.com/r/leistungstag/"><i class="fa fa-twitter w3-hover-opacity"></a></i>
+  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa fa-linkedin w3-hover-opacity"></a></i>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

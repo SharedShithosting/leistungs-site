@@ -9,8 +9,11 @@
 		<title>Leistungstag</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" type="image/x-icon" href="./images/thumbnail.png">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/leistungstag.css" />
+		<link rel="stylesheet" href="assets/css/swiper.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -25,8 +28,11 @@
 						</div>
 						<div class="content">
 							<div class="inner">
-								<h1>Leistungstag</h1>
-								<p><a href="#registerauszug">Verein</a> zur Förderung der lokalen Wirtschaften</p>
+								<p>
+									<a href="#registerauszug">
+										<img src="./images/LeistungstagSchrift.svg" style="width:100%">
+									</a>
+								</p>
 							</div>
 						</div>
 						<nav>
@@ -47,9 +53,45 @@
 						<!-- Intro -->
 							<article id="intro">
 								<h2 class="major">Daheim</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+								<span class="image main">
+									<div class="swiper">
+										<!-- Additional required wrapper -->
+										<div class="swiper-wrapper">
+										  <!-- Slides -->
+										  	<div class="swiper-slide">
+												<img src="./images/slideshow/EntstehungDesLeiszungsbots.jpg" style="width:100%">
+											</div>
+											<div class="swiper-slide">
+												<img src="./images/slideshow/KlassischerLeistungstag.jpg" style="width:100%">
+											</div>
+											<div class="swiper-slide">
+												<img src="./images/slideshow/Vereinsgründung.jpg" style="width:100%">
+											</div>
+											<div class="swiper-slide">
+												<img src="./images/slideshow/KaufUnserenMerch.jpg" style="width:100%">
+											</div>
+											<div class="swiper-slide">
+												<img src="./images/slideshow/ErsteRedeDesObmanns.jpg" style="width:100%">
+											</div>
+											<div class="swiper-slide">
+												<img src="./images/slideshow/ArbeitenSchiach.jpg" style="width:100%">
+											</div>
+											<div class="swiper-slide">
+												<img src="./images/slideshow/ArbeitenBisInDieLetzteSekunde.jpg" style="width:100%">
+											</div>
+										</div>
+										<!-- If we need pagination -->
+										<div class="swiper-pagination"></div>
+									  
+										<!-- If we need navigation buttons -->
+										<div class="swiper-button-prev"></div>
+										<div class="swiper-button-next"></div>
+									  
+										<!-- If we need scrollbar -->
+										<div class="swiper-scrollbar"></div>
+									</div>       
+								</span>
 								<p>Der Verein hat es sich zur Aufgabe gemacht, die Wirtschaftsleistung zu fördern, indem er regelmäßig Lokale wie Gaststätten, Bars und Imbissstände besucht und dort Konsum tätigt. Zudem wird der soziale Austausch zwischen den Vereinsmitgliedern und den Betreibern der Lokalitäten gefördert.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
 							</article>
 
 						<!-- Work -->
@@ -579,6 +621,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/index-36802418.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+			<script src="assets/js/swiper.js"></script>
 
 	</body>
 </html>

@@ -1,0 +1,9 @@
+.fa-custom-logo {
+    background-image: url('images/logo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display:inline-block;
+    height: 100%;
+    width: 80%;
+}

@@ -1,7 +1,7 @@
-mail(
-    string $to,
-    string $subject,
-    string $message,
-    array|string $additional_headers = [],
-    string $additional_params = ""
-): bool
+<?php
+// Die Nachricht
+$nachricht = "Name: " + $Name + "   EMail:" + $Email + "     Message: " + $Message;
+
+// Verschicken
+mail('office@leistungstag.beer', 'Post von der Website', $nachricht);
+?>

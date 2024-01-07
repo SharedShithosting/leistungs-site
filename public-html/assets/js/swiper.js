@@ -1,6 +1,5 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-  direction: 'vertical',
   loop: true,
 
   // If we need pagination
@@ -13,9 +12,14 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  effect: "cards",
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  swiper.update();
+});
+
+document.getElementById("intro").addEventListener("click", function () {
+  swiper.update();
 });

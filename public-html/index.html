@@ -9,9 +9,9 @@
 	<title>Leistungstag</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="manifest" href="site.webmanifest">
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="assets/css/leistungstag.css" />
-	<link rel="stylesheet" href="assets/css/swiper.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
@@ -57,48 +57,46 @@
 		<!-- Intro -->
 		<article id="intro">
 			<h2 class="major">Daheim</h2>
-			<span class="image main">
-                  <div class="swiper">
-                     <!-- Additional required wrapper -->
-                     <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                           <img src="./images/slideshow/EntstehungDesLeiszungsbots.jpg" style="width:100%">
-                        </div>
-                        <div class="swiper-slide">
-                           <img src="./images/slideshow/KlassischerLeistungstag.jpg" style="width:100%">
-                        </div>
-                        <div class="swiper-slide">
-                           <img src="./images/slideshow/Vereinsgründung.jpg" style="width:100%">
-                        </div>
-                        <div class="swiper-slide">
-                           <img src="./images/slideshow/KaufUnserenMerch.jpg" style="width:100%">
-                        </div>
-                        <div class="swiper-slide">
-                           <img src="./images/slideshow/ErsteRedeDesObmanns.jpg" style="width:100%">
-                        </div>
-                        <div class="swiper-slide">
-                           <img src="./images/slideshow/ArbeitenSchiach.jpg" style="width:100%">
-                        </div>
-                        <div class="swiper-slide">
-                           <img src="./images/slideshow/ArbeitenBisInDieLetzteSekunde.jpg" style="width:100%">
-                        </div>
-                     </div>
-					  <!-- If we need pagination -->
-                     <div class="swiper-pagination"></div>
-					  <!-- If we need navigation buttons -->
-                     <div class="swiper-button-prev"></div>
-                     <div class="swiper-button-next"></div>
-					  <!-- If we need scrollbar -->
-                     <div class="swiper-scrollbar"></div>
-                  </div>
-               </span>
+			  <span class="swiper image main">
+				 <!-- Additional required wrapper -->
+				 <div class="swiper-wrapper">
+					<!-- Slides -->
+					<span class="swiper-slide">
+					   <img src="images/slideshow/EntstehungDesLeiszungsbots.jpg" alt="" />
+					</span>
+					<div class="swiper-slide">
+					   <img src="images/slideshow/KlassischerLeistungstag.jpg" alt="" />
+					</div>
+					<div class="swiper-slide">
+					   <img src="images/slideshow/Vereinsgründung.jpg" alt="" />
+					</div>
+					<div class="swiper-slide">
+					   <img src="images/slideshow/KaufUnserenMerch.jpg" alt="" />
+					</div>
+					<div class="swiper-slide">
+					   <img src="images/slideshow/ErsteRedeDesObmanns.jpg" alt="" />
+					</div>
+					<div class="swiper-slide">
+					   <img src="images/slideshow/ArbeitenSchiach.jpg" alt="" />
+					</div>
+					<div class="swiper-slide">
+					   <img src="images/slideshow/ArbeitenBisInDieLetzteSekunde.jpg" alt="" />
+					</div>
+				 </div>
+				  <!-- If we need pagination -->
+				 <div class="swiper-pagination"></div>
+				  <!-- If we need navigation buttons -->
+				 <div class="swiper-button-prev"></div>
+				 <div class="swiper-button-next"></div>
+				  <!-- If we need scrollbar -->
+				 <div class="swiper-scrollbar"></div>
+			  </span>
 			<p>Der Verein hat es sich zur Aufgabe gemacht, die Wirtschaftsleistung zu fördern, indem er regelmäßig Lokale wie Gaststätten, Bars und Imbissstände besucht und dort Konsum tätigt. Zudem wird der soziale Austausch zwischen den Vereinsmitgliedern und den Betreibern der Lokalitäten gefördert.</p>
 		</article>
 		<!-- Work -->
 		<article id="calendar">
 			<h2 class="major">Kalendar</h2>
-			<iframe src="https://calendar.google.com/calendar/embed?src=6ibd3l0hnkfth03uvplkqjtulngc6fkm%40import.calendar.google.com&ctz=Europe%2FVienna" style="border: 0; padding: 20" width="100%" height="600" frameborder="0" scrolling="no">Calender Import. Click me daddy!</iframe>
+			<div id='leistungscalendar' style="min-height: 500px; width: 100%;"></div>
 		</article>
 		<!-- map -->
 		<article id="leistungsmap">
@@ -548,7 +546,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	</div>
 	<!-- Footer -->
 	<footer id="footer">
-		<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+		<p class="copyright">&copy; Leistungstag Verein. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 	</footer>
 </div>
 <!-- BG -->
@@ -559,9 +557,11 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 <script src="assets/js/breakpoints.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
-<script src="assets/js/main.js"></script>
 <script src="assets/js/index-36802418.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="assets/js/swiper.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.10/index.global.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.10/index.global.js"></script>
+<script src="assets/js/fullcalendar.js"></script>
 </body>
 </html>

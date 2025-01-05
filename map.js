@@ -1,12 +1,35 @@
 var ICAL = ICALmodule;
 
+class LeistungsTypen {
+    static get LEISTUNGSTAG() {
+        return 0;
+    }
+    static get ZUSATZLEISTUNGSTAG() {
+        return 1;
+    }
+    static get YEARLY_WINNER() {
+        return 2;
+    }
+}
 class Leistungstag {
     title;
+    date;
     position;
+    type;
 
-    constructor(title, position) {
+    constructor(title, position, date) {
         this.title = title;
         this.position = position;
+        this.date = date;
+        if(title.startsWith("Leistungstag")) {
+            this.type = LeistungsTypen.LEISTUNGSTAG
+        }
+        else if(title.startsWith("Zusatzleistungstag")) {
+            this.type = LeistungsTypen.ZUSATZLEISTUNGSTAG
+        }
+        else {
+            this.type = LeistungsTypen.OTHER
+        }
     }
 }
 
@@ -29,7 +52,8 @@ async function getLeistungstage() {
     return vCalendar.getAllSubcomponents("vevent").map(event => {
         let name = event.getFirstPropertyValue("summary")
         let latLng = event.getFirstPropertyValue("location").split(" ")
-        return new Leistungstag(name, [parseFloat(latLng[0]), parseFloat(latLng[1])])
+        let date = event.getFirstPropertyValue("dtstart").toJSDate()
+        return new Leistungstag(name, [parseFloat(latLng[0]), parseFloat(latLng[1])], date)
     });
 }
 
@@ -47,10 +71,23 @@ async function initMap() {
             iconSize: [60, 30]
         }
     });
-    const beerIcon = new LeafIcon({iconUrl: 'images/beer.png'});
 
     leistungstage.forEach(leistungstag => {
-        L.marker(leistungstag.position, {icon: beerIcon}).bindPopup(leistungstag.title).addTo(map);
+        let beerIcon;
+        switch (leistungstag.type) {
+            case LeistungsTypen.ZUSATZLEISTUNGSTAG:
+                beerIcon = new LeafIcon({iconUrl: 'images/zusatz_beer.svg'});
+                break
+            case LeistungsTypen.YEARLY_WINNER:
+                beerIcon = new LeafIcon({iconUrl: 'images/yearly_beer.svg'});
+                break
+            default:
+                beerIcon = new LeafIcon({iconUrl: 'images/lt_beer.svg'});
+                break
+        }
+        L.marker(leistungstag.position, {icon: beerIcon}).bindPopup("" +
+            `${leistungstag.title}<br>${leistungstag.date.toLocaleDateString()}`
+        ).addTo(map);
     });
 }
 

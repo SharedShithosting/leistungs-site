@@ -1,11 +1,15 @@
+import ICAL from 'https://unpkg.com/ical.js';
+
 class Leistungstag {
     title;
     position;
+
     constructor(title, position) {
         this.title = title;
         this.position = position;
     }
 }
+
 // config map
 let config = {
     minZoom: 7,
@@ -19,21 +23,13 @@ const lat = 48.304918;
 const lng = 14.289177;
 
 async function getLeistungstage() {
-    //const data = await fetch('https://ics.leistungstag.beer')
-    const data = await fetch('assets/misc/lt.json')
-        .then(response => response.json())
-    let hauptLeistungstagCounter = 1
-    return data.map((event, i) => {
-        let name = ""
-        if (event.type === "1") {
-            name = "Leistungstag #" + hauptLeistungstagCounter + " | " + event.name
-            hauptLeistungstagCounter += 1
-        } else if(event.type === "2") {
-            name = "Konkurrenzleistungstag | " + event.name
-        } else if(event.type === "3") {
-            name = "Zusatzleistungstag | " + event.name
-        }
-        return new Leistungstag(name, [parseFloat(event.lat), parseFloat(event.lng)])
+    const data = await fetch('https://ics.leistungstag.beer?locationAsCoords=true')
+        .then(async response => ICAL.parse(await response.text()))
+    const vCalendar = new ICAL.Component(data);
+    return vCalendar.getAllSubcomponents("vevent").map(event => {
+        let name = event.getFirstPropertyValue("summary")
+        let latLng = event.getFirstPropertyValue("location").split(" ")
+        return new Leistungstag(name, [parseFloat(latLng[0]), parseFloat(latLng[1])])
     });
 }
 
@@ -53,8 +49,8 @@ async function initMap() {
     });
     const beerIcon = new LeafIcon({iconUrl: 'images/beer.png'});
 
-    leistungstage.forEach(({ position, title }, i) => {
-        L.marker(position, {icon: beerIcon}).bindPopup(title).addTo(map);
+    leistungstage.forEach(leistungstag => {
+        L.marker(leistungstag.position, {icon: beerIcon}).bindPopup(leistungstag.title).addTo(map);
     });
 }
 

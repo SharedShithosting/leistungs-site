@@ -1,4 +1,4 @@
-import ICAL from 'https://unpkg.com/ical.js';
+var ICAL = ICALmodule;
 
 class Leistungstag {
     title;

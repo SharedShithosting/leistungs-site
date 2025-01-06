@@ -68,7 +68,7 @@ async function initMap() {
     // Create the markers.
     const LeafIcon = L.Icon.extend({
         options: {
-            iconSize: [60, 30]
+            iconSize: [50, 25]
         }
     });
 

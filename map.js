@@ -10,6 +10,9 @@ class LeistungsTypen {
     static get YEARLY_WINNER() {
         return 2;
     }
+    static get KONKURRENZLEISTUNGSTAG() {
+        return 3;
+    }
 }
 class Leistungstag {
     title;
@@ -21,14 +24,14 @@ class Leistungstag {
         this.title = title;
         this.position = position;
         this.date = date;
-        if(title.startsWith("Leistungstag")) {
-            this.type = LeistungsTypen.LEISTUNGSTAG
+        if(title.startsWith("Konkurrenzleistungstag")) {
+            this.type = LeistungsTypen.KONKURRENZLEISTUNGSTAG
         }
         else if(title.startsWith("Zusatzleistungstag")) {
             this.type = LeistungsTypen.ZUSATZLEISTUNGSTAG
         }
         else {
-            this.type = LeistungsTypen.OTHER
+            this.type = LeistungsTypen.LEISTUNGSTAG
         }
     }
 }
@@ -80,6 +83,9 @@ async function initMap() {
                 break
             case LeistungsTypen.YEARLY_WINNER:
                 beerIcon = new LeafIcon({iconUrl: 'images/yearly_beer.svg'});
+                break
+            case LeistungsTypen.KONKURRENZLEISTUNGSTAG:
+                beerIcon = new LeafIcon({iconUrl: 'images/konkurrenz_beer.svg'});
                 break
             default:
                 beerIcon = new LeafIcon({iconUrl: 'images/lt_beer.svg'});

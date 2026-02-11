@@ -39,12 +39,6 @@ class Leistungstag {
     }
 }
 
-// config map
-let config = {
-    minZoom: 7,
-    maxZoom: 18,
-};
-
 // magnification with which the map will start
 const zoom = 13;
 // co-ordinates
@@ -64,10 +58,12 @@ async function getLeistungstage() {
 }
 
 async function initMap() {
-    const map = L.map("map", config).setView([lat, lng], zoom);
+    const key = 'D2wVuzUwMjpTJ3uMaTi4';
+    const map = L.map("map").setView([lat, lng], zoom);
 
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    const mtLayer = L.maptiler.maptilerLayer({
+      apiKey: key,
+      style: L.maptiler.MapStyle.BASIC_V2, //optional
     }).addTo(map);
 
     var leistungstage = await getLeistungstage()

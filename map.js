@@ -30,6 +30,9 @@ class Leistungstag {
         else if(title.startsWith("Zusatzleistungstag")) {
             this.type = LeistungsTypen.ZUSATZLEISTUNGSTAG
         }
+	else if(title.startsWith("Jahresleistungstag")) {
+            this.type = LeistungsTypen.YEARLY_WINNER
+	}
         else {
             this.type = LeistungsTypen.LEISTUNGSTAG
         }
@@ -83,6 +86,7 @@ async function initMap() {
                 break
             case LeistungsTypen.YEARLY_WINNER:
                 beerIcon = new LeafIcon({iconUrl: 'images/yearly_beer.svg'});
+                beerIcon.options.iconSize = [25, 12.5];
                 break
             case LeistungsTypen.KONKURRENZLEISTUNGSTAG:
                 beerIcon = new LeafIcon({iconUrl: 'images/konkurrenz_beer.svg'});

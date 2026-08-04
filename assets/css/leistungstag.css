@@ -10,3 +10,11 @@
 #language {
     width: 10rem;
 }
+
+/* Google's calendar embed has no dark skin and always paints itself white,
+   which the rest of the site is not. Inverting the iframe matches the dark
+   template; the hue-rotate puts the colours (links, event dots) back. */
+#google-calendar {
+    filter: invert(1) hue-rotate(180deg);
+    border-radius: 4px;
+}

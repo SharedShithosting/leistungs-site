@@ -14,6 +14,17 @@ class LeistungsTypen {
         return 3;
     }
 }
+// Google Calendar prefixes every summary with its category ("Leistungstag:
+// Goethe Stub'n"). The old spellings stay in the list so historic events that
+// were written by Leistungsbot itself still get the right icon. Order matters:
+// the specific categories have to win over the plain "Leistungstag".
+const LEISTUNGSTAG_KATEGORIEN = [
+    [/^Konkurrenz[ -]?Leistungstag:?\s*/i, LeistungsTypen.KONKURRENZLEISTUNGSTAG],
+    [/^(?:Leistungstag Zusatztermin|Zusatzleistungstag):?\s*/i, LeistungsTypen.ZUSATZLEISTUNGSTAG],
+    [/^(?:Jahres|Abschluss)leistungstag:?\s*/i, LeistungsTypen.YEARLY_WINNER],
+    [/^Leistungstag:?\s*/i, LeistungsTypen.LEISTUNGSTAG],
+];
+
 class Leistungstag {
     title;
     date;
@@ -21,20 +32,19 @@ class Leistungstag {
     type;
 
     constructor(title, position, date) {
-        this.title = title;
         this.position = position;
         this.date = date;
-        if(title.startsWith("Konkurrenzleistungstag")) {
-            this.type = LeistungsTypen.KONKURRENZLEISTUNGSTAG
-        }
-        else if(title.startsWith("Zusatzleistungstag")) {
-            this.type = LeistungsTypen.ZUSATZLEISTUNGSTAG
-        }
-	else if(title.startsWith("Jahresleistungstag")) {
-            this.type = LeistungsTypen.YEARLY_WINNER
-	}
-        else {
-            this.type = LeistungsTypen.LEISTUNGSTAG
+        this.type = LeistungsTypen.LEISTUNGSTAG;
+        this.title = title;
+
+        for (const [prefix, type] of LEISTUNGSTAG_KATEGORIEN) {
+            if (prefix.test(title)) {
+                // The icon already says which category it is, so the popup only
+                // needs the name of the Lokal.
+                this.title = title.replace(prefix, "");
+                this.type = type;
+                break;
+            }
         }
     }
 }
@@ -50,11 +60,18 @@ async function getLeistungstage() {
         .then(async response => ICAL.parse(await response.text()))
     const vCalendar = new ICAL.Component(data);
     return vCalendar.getAllSubcomponents("vevent").map(event => {
+        // The proxy drops LOCATION for venues it has not geocoded yet, so an
+        // event without usable coordinates is expected rather than an error.
+        let location = event.getFirstPropertyValue("location")
+        if (!location) return null
+
+        let [lat, lng] = location.split(" ").map(value => parseFloat(value))
+        if (!Number.isFinite(lat) || !Number.isFinite(lng)) return null
+
         let name = event.getFirstPropertyValue("summary")
-        let latLng = event.getFirstPropertyValue("location").split(" ")
         let date = event.getFirstPropertyValue("dtstart").toJSDate()
-        return new Leistungstag(name, [parseFloat(latLng[0]), parseFloat(latLng[1])], date)
-    });
+        return new Leistungstag(name, [lat, lng], date)
+    }).filter(leistungstag => leistungstag !== null);
 }
 
 async function initMap() {

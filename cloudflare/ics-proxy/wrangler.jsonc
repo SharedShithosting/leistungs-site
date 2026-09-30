@@ -1,0 +1,28 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "leistungstag-ics",
+	"main": "src/index.js",
+	"compatibility_date": "2026-08-04",
+	"observability": {
+		"enabled": true
+	},
+	"routes": [
+		{
+			"pattern": "ics.leistungstag.beer",
+			"custom_domain": true
+		}
+	],
+	"kv_namespaces": [
+		{
+			"binding": "GEOCACHE",
+			// Replace with the id printed by:
+			//   npx wrangler kv namespace create GEOCACHE
+			"id": "REPLACE_ME"
+		}
+	],
+	"triggers": {
+		// Nightly warm-up so a newly added venue reaches the map even if nobody
+		// loads the site in the meantime.
+		"crons": ["17 4 * * *"]
+	}
+}
